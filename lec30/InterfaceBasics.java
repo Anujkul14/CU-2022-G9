@@ -1,6 +1,10 @@
 package lec30;
 
-interface Drawable { void draw(); }
+interface Drawable {
+    //Data memeber by default -> public static final
+    int a = 10;
+    //method memeber -> public
+    void draw(); }
 
 class Circle implements Drawable {
     private int radius;
@@ -17,6 +21,7 @@ class Circle implements Drawable {
 }
 public class InterfaceBasics {
     public static void main(String []args) {
+        Circle obj = new Circle(10);
         Drawable circle = new Circle(5);
         circle.draw();
     }

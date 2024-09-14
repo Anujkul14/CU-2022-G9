@@ -3,6 +3,7 @@ package lec35;
 public class StringBufferDemo {
     public static void main(String[] args) {
         StringBuffer sb1 = new StringBuffer();
+        //initial capacity : 16
         System.out.println(sb1.capacity());
         System.out.println(sb1);
 
@@ -10,6 +11,7 @@ public class StringBufferDemo {
         System.out.println(sb2.capacity());
 
         StringBuffer sb3 = new StringBuffer("Hello G9");
+        //initial capacity + length of the string
         System.out.println(sb3.capacity());
         System.out.println(sb3);
 
@@ -37,5 +39,7 @@ public class StringBufferDemo {
 
         //refernce compare
         System.out.println(sb4.equals(sb6));
+
+
     }
 }

@@ -1,4 +1,4 @@
-package lec39;
+package Lec38;
 
 class MyRunnable implements Runnable{
     public void run()

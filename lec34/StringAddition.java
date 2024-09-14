@@ -23,9 +23,9 @@ public class StringAddition {
 
         //string + anything = string
         System.out.println("Hello" + 6 + 10 + "Chandigarh");
-        //Hello610Chandigarh
+
         System.out.println(10 + 20 + "Hello" + 6 + "Chitkara");
-        //
+
         System.out.println("Hello" + (6 + 10) + "Chandigarh");
 
 

@@ -6,7 +6,7 @@ public class StringConstructor {
         String s2 = "G9,Shaant ho jao";
 
         byte[] arr1 = {70,80,110,120};
-        String s3 = new String(arr1);
+        String s3 = new String(arr1,1,2);
 
         char[] arr2 = {'a','b','c','d'};
         String s4 = new String(arr2);

@@ -15,6 +15,7 @@ public class StringDemo {
             System.out.println(System.identityHashCode(s4));
             System.out.println(System.identityHashCode(s5));
 
+            //check both memory loc are same or not,to compare content use -> equals()
             System.out.println(s1 == s2);
             System.out.println(s1 == s3);
             System.out.println(s2 == s4);
