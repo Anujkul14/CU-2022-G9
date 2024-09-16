@@ -35,6 +35,27 @@ public class ArrayListImplementationDemo {
             arr[index] = val;
         }
 
+        public T remove() {
+            T oldValue = (T) arr[size - 1];
+            arr[size - 1] = null;
+            size--;
+            return oldValue;
+        }
+
+        public String toString() {
+            StringBuilder res = new StringBuilder("[");
+            for (int idx = 0; idx < size; idx++) {
+                res.append(arr[idx]).append(", ");
+            }
+            if (size > 0) {
+                res.setCharAt(res.length() - 2, ']');
+                res.deleteCharAt(res.length() - 1);
+            } else {
+                res.append("]");
+            }
+            return res.toString();
+        }
+
     }
 
 
